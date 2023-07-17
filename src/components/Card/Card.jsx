@@ -4,25 +4,15 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-
 import styled from 'styled-components';
-
-// width: 120px;
-// height: 130px;
-// background: var(--blanco);
-// display: flex;
-// flex - direction: column;
-// justify - content: end;
-// padding: 1rem;
-// text - align: left;
-// margin - bottom: 1.5rem;
-// transition: all 0.2s ease -in;
+import { cenizaClaro } from '../Variables';
 
 
 const StyledCard = styled(Card)`
   width: 120px;
   height: 130px;
   display: flex;
+  background-color: ${cenizaClaro};
   flex-direction: column;
   justify-content: end;
   text-align: left;
@@ -37,7 +27,7 @@ const StyledCard = styled(Card)`
 const MuiCard = ({ image, alt }) => {
 
   return (
-    <StyledCard>
+    <StyledCard sx={{ backgroundColor: `${cenizaClaro}`}}>
       <CardActionArea>
         <CardMedia
           component="img"

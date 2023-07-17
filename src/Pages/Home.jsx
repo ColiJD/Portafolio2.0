@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar'
 import { MuiButton } from "../components/Componentes";
 import MuiCard from "../components/Card/Card";
+import CardEducacion from "../components/CardEdu/CardEdu";
 
 const StyledImg = styled.img`
     display: block;
@@ -72,6 +73,17 @@ const Home = () => {
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/headphones_icon.png' alt='Musica' />
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/volley.png' alt='Volleyball' />
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/moto.png' alt='Ir de Ruta' />
+        </Box>
+      </StyledContainer>
+      <StyledContainer>
+        <Typography variant="h2" sx={{ marginBottom: '1.5rem' }}>Educacion</Typography>
+        <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
+          <CardEducacion image='https://colijd.github.io/Portafolio/assets/img/unicah.png' alt='Logo de la universidad catolica'
+            subtitulo='Ing Ciencias de la Computacion' anio='2020-2024' />
+          <CardEducacion image='https://colijd.github.io/Portafolio/assets/img/alura_logo.png' alt='Logo de alura'
+            subtitulo='Diseño Web' anio='Alura-2023' />
+          <CardEducacion image='https://colijd.github.io/Portafolio/assets/img/udemy.png' alt='Logo de udemy'
+            subtitulo='Base de Datos' anio='Curso 2022' />
         </Box>
       </StyledContainer>
     </>

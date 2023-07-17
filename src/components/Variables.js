@@ -4,6 +4,7 @@ export const void1 = "#0e0b16";
 export const fuschia = "#A239CA";
 export const azul = "#4717F6";
 export const stark = "#E7DFDD";
+export const cenizaClaro = '#f2f2f2e8';
 
 
 

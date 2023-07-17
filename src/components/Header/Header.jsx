@@ -58,8 +58,8 @@ const Header = () => {
         <StyledBox>
           <Link to="/"><StyledButon >Sobre Mi</StyledButon></Link>
           <Link to="/proyectos"><StyledButon >Proyectos</StyledButon></Link>
-          <Link to="/"> <StyledButon >CV</StyledButon></Link>
-          <Link to="/"><StyledButon >CV</StyledButon></Link>
+          <Link to="/CV"> <StyledButon >CV</StyledButon></Link>
+          <Link to="/Contacto"><StyledButon >Contactos</StyledButon></Link>
         </StyledBox>
       </Styledbarra>
     </AppBar>

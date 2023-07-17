@@ -16,7 +16,7 @@ const StyledButon = styled.button`
   }
   `
 
-const MuiButton = ({ children,href }) => {
+const MuiButton = ({ children, href, endIcon }) => {
   const blanco = "#FFFFFF";
 
   const estiloBoton = {
@@ -26,11 +26,13 @@ const MuiButton = ({ children,href }) => {
   };
 
   return (
-    <Button variant="outlined" sx={estiloBoton} href={href} target='_blank'>
+    <Button variant="outlined" sx={estiloBoton} href={href} target='_blank' endIcon={endIcon}>
       {children}
     </Button>
   );
 };
+
+
 
 
 
