@@ -8,6 +8,11 @@ import { MuiButton } from "../components/Componentes";
 import MuiCard from "../components/Card/Card";
 import CardEducacion from "../components/CardEdu/CardEdu";
 
+
+const SContainer = {
+  display: "flex", flexDirection: 'row-reverse', justifyContent: 'space-between', alignItems: 'center', marginTop: "3rem"
+}
+
 const StyledImg = styled.img`
     display: block;
     height: 300px;
@@ -20,21 +25,26 @@ const StyledImg = styled.img`
     margin-left: 1.5rem;
 
 `
-const StyledBox = styled(Box)`
-  width: 75%;
-`
+const StyledBox = {
+  width: '75%',
+};
 
-const StyledContainer = styled(Container)`
-  margin-bottom: 3rem;
-  text-align: center;
-`
+const SBox = {
+  display: 'flex', justifyContent: 'space-around'
+}
+const STipografia = {
+  marginBottom: '1.5rem'
+}
+const SContainerSeccion = {
+  marginBottom: '3rem', textAlign: 'center',
+};
 
 const Home = () => {
   return (
     <>
-      <Container sx={{ display: "flex", flexDirection: 'row-reverse', justifyContent: 'space-between', alignItems: 'center', marginTop: "3rem" }}>
+      <Container sx={SContainer}>
         <StyledImg src="https://colijd.github.io/Portafolio/assets/img/perfil.jpg" />
-        <StyledBox>
+        <Box sx={StyledBox}>
           <Typography variant="h4" component="p" sx={{ marginBottom: "2rem" }}>Hola, mi nombre es Jose Daniel Colindres y construyo paginas web</Typography>
           <Typography variant="body1" >Soy formado en la univercidad catolica de Honduras en la carrera de ciencias
             de la computacion especializado en Front-end gracias al equipo de alura,estuve participando del proyecto Oracle ONE en Alura Latam.
@@ -44,18 +54,18 @@ const Home = () => {
             <MuiButton href="https://www.linkedin.com/in/jose-colindres-55850b258">Linkedin</MuiButton>
             <MuiButton href="https://www.instagram.com/jose_colindres89/">Instagram</MuiButton>
           </Toolbar>
-        </StyledBox>
+        </Box>
       </Container>
       <Container sx={{ marginBottom: '2rem' }}>
-        <StyledBox>
+        <Box sx={StyledBox}>
           <Typography variant="h2">Sobre Mi</Typography>
           <Typography variant="body1" sx={{ textAlign: "justify" }} >Soy un joven de 22 años de tes blanca me gusta la tecnología, la creacion de aplicaciones de escritorio, de dispositivos mobiles, el desarrollo de paginas web, soy atento, autodidacta, responsable, estudie la carrera de ciencias de la computacion por que me gusta el hecho de crear, de innovar nuevas sistemas que ayuden a las personas a desarrollar sus actividades con mayor facilidad, soy entuciasta,</Typography>
           <Typography variant="body1" sx={{ marginTop: "1.75rem" }}>Citando a una gran persona que dijo "Si puedes imaginarlo puedes programarlo" Estoy capacitado por cursos en udemy de base de datos, y en alura de html, css, javascript, git y react y poseo conocimiento en el area de redes por la capacitacion de cisco.</Typography>
-        </StyledBox>
+        </Box>
       </Container>
-      <StyledContainer>
-        <Typography variant="h2" sx={{ marginBottom: '1.5rem' }}>Habilidades</Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
+      <Container sx={SContainerSeccion}>
+        <Typography variant="h2" sx={STipografia}>Habilidades</Typography>
+        <Box sx={SBox}>
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/htlm.png' alt='Html' />
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/css_icon.png' alt='Css' />
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/js_icon.png' alt='JavaScript' />
@@ -63,10 +73,10 @@ const Home = () => {
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/sql.png' alt='MySql' />
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/nodejs_icon.png' alt='Node JS' />
         </Box>
-      </StyledContainer>
-      <StyledContainer>
-        <Typography variant="h2" sx={{ marginBottom: '1.5rem' }}>Hobbies</Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
+      </Container>
+      <Container sx={SContainerSeccion}>
+        <Typography variant="h2" sx={STipografia}>Hobbies</Typography>
+        <Box sx={SBox}>
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/tv_icon.png' alt='Anime' />
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/tv_icon.png' alt='Series' />
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/guitar_icon.png' alt='Guitarra' />
@@ -74,10 +84,10 @@ const Home = () => {
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/volley.png' alt='Volleyball' />
           <MuiCard image='https://colijd.github.io/Portafolio/assets/img/moto.png' alt='Ir de Ruta' />
         </Box>
-      </StyledContainer>
-      <StyledContainer>
-        <Typography variant="h2" sx={{ marginBottom: '1.5rem' }}>Educacion</Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
+      </Container>
+      <Container sx={SContainerSeccion}>
+        <Typography variant="h2" sx={STipografia}>Educacion</Typography>
+        <Box sx={SBox}>
           <CardEducacion image='https://colijd.github.io/Portafolio/assets/img/unicah.png' alt='Logo de la universidad catolica'
             subtitulo='Ing Ciencias de la Computacion' anio='2020-2024' />
           <CardEducacion image='https://colijd.github.io/Portafolio/assets/img/alura_logo.png' alt='Logo de alura'
@@ -85,7 +95,7 @@ const Home = () => {
           <CardEducacion image='https://colijd.github.io/Portafolio/assets/img/udemy.png' alt='Logo de udemy'
             subtitulo='Base de Datos' anio='Curso 2022' />
         </Box>
-      </StyledContainer>
+      </Container>
     </>
   )
 }

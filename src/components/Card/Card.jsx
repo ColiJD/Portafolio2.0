@@ -4,36 +4,35 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { cenizaClaro } from '../Variables';
 
+const CardStyled = {
+  width: "120px",
+  height: "130px",
+  display: 'flex',
+  backgroundColor: cenizaClaro, // Assuming cenizaClaro is a defined variable
+  flexDirection: 'column',
+  justifyContent: 'flex-end',
+  textAlign: 'left',
+  transition: 'all 0.2s ease-in', // There should be no space between "ease" and "-in"
 
-const StyledCard = styled(Card)`
-  width: 120px;
-  height: 130px;
-  display: flex;
-  background-color: ${cenizaClaro};
-  flex-direction: column;
-  justify-content: end;
-  text-align: left;
-  transition: all 0.2s ease -in;
-
-    &:hover{
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      transform: scale(1.1);
-    }
-`
+  '&:hover': { // The :hover pseudo-class should be outside the backticks
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
+    transform: 'scale(1.1)',
+  },
+};
 
 const MuiCard = ({ image, alt }) => {
 
   return (
-    <StyledCard sx={{ backgroundColor: `${cenizaClaro}`}}>
+    <Card sx={CardStyled}>
       <CardActionArea>
         <CardMedia
           component="img"
           image={image}
           alt={alt}
-          sx={{ width: '2.5rem', paddingLeft: '0.75rem', }}
+          sx={{ width: '2.5rem', paddingLeft: '0.75rem' }}
         />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
@@ -41,8 +40,24 @@ const MuiCard = ({ image, alt }) => {
           </Typography>
         </CardContent>
       </CardActionArea>
-    </StyledCard>
+    </Card>
   );
 }
 
 export default MuiCard;
+
+// const StyledCard = styled(Card)`
+//   width: 120px;
+//   height: 130px;
+//   display: flex;
+//   background-color: ${cenizaClaro};
+//   flex-direction: column;
+//   justify-content: end;
+//   text-align: left;
+//   transition: all 0.2s ease -in;
+
+//     &:hover{
+//       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+//       transform: scale(1.1);
+//     }
+// `
