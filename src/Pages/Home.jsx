@@ -5,8 +5,8 @@ import styled from "styled-components";
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar'
 import { MuiButton } from "../components/Componentes";
-import MuiCard from "../components/Card/Card";
-import CardEducacion from "../components/CardEdu/CardEdu";
+import MuiCard from "../components/Home/Card/Card";
+import CardEducacion from "../components/Home/CardEdu/CardEdu";
 
 
 const SContainer = {
@@ -50,9 +50,10 @@ const Home = () => {
             de la computacion especializado en Front-end gracias al equipo de alura,estuve participando del proyecto Oracle ONE en Alura Latam.
           </Typography>
           <Toolbar>
-            <MuiButton href="https://github.com/ColiJD?tab=repositories" >Github</MuiButton>
-            <MuiButton href="https://www.linkedin.com/in/jose-colindres-55850b258">Linkedin</MuiButton>
-            <MuiButton href="https://www.instagram.com/jose_colindres89/">Instagram</MuiButton>
+            <MuiButton variant="outlined" href="https://github.com/ColiJD?tab=repositories" >Github</MuiButton>
+            <MuiButton variant="outlined" href="https://www.linkedin.com/in/jose-colindres-55850b258">Linkedin</MuiButton>
+            <MuiButton variant="outlined" href="https://www.instagram.com/jose_colindres89/">Instagram</MuiButton>
+            <MuiButton variant="outlined" href="https://colijd.github.io/imagenes/imagen/cv.pdf">Curriculum</MuiButton>
           </Toolbar>
         </Box>
       </Container>

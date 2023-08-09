@@ -1,39 +1,36 @@
-import styled from 'styled-components';
+import { styled } from '@mui/material/styles';
 import { blanco, fuschia, azul } from './Variables';
 import Button from '@mui/material/Button';
 
-const StyledButon = styled.button`
-  width: 100%;
-  color: ${blanco} ;
-  background-color: ${fuschia};
-  padding: 0.3rem 1rem;
-  border-radius: 0.3rem;
-  font-size: 18px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out; 
-  &:hover{
-    background-color: ${azul}
-  }
-  `
+const StyledButon = styled('button')({
+  width: '100%',
+  color: blanco,
+  backgroundColor: fuschia,
+  padding: '0.3rem 1rem',
+  borderRadius: '0.3rem',
+  fontSize: '18px',
+  cursor: 'pointer',
+  transition: 'all 0.2s ease-in-out',
+  '&:hover': {
+    backgroundColor: azul,
+  },
+});
 
-const MuiButton = ({ children, href, endIcon }) => {
-  const blanco = "#FFFFFF";
+const EstiloBoton = styled(Button)({
+  color: blanco,
+  borderColor: blanco,
+  marginRight: '0.75rem'
+});
 
-  const estiloBoton = {
-    color: blanco,
-    borderColor: blanco,
-    marginRight: '0.75rem'
-  };
+const MuiButton = ({ children, href, endIcon, component, sx, variant }) => {
 
   return (
-    <Button variant="outlined" sx={estiloBoton} href={href} target='_blank' endIcon={endIcon}>
+    <EstiloBoton sx={sx} variant={variant} component={component} href={href} target='_blank' endIcon={endIcon} rel="noopener noreferrer">
       {children}
-    </Button>
+    </EstiloBoton>
   );
 };
 
 
 
-
-
-export {StyledButon, MuiButton };
+export { StyledButon, MuiButton};

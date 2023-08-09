@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 // import styled from 'styled-components';
-import { cenizaClaro } from '../Variables';
+import { cenizaClaro } from '../../Variables';
 
 const CardStyled = {
   width: "120px",

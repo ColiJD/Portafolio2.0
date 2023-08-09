@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import { Link } from "react-router-dom";
 import { StyledButon } from "../Componentes";
+import { styled } from "@mui/material/styles";
 
 
 const StyledBarra = {
@@ -23,12 +24,13 @@ const StyledBarra = {
 
 const StyledBox = {
   display: 'grid',
-  gridTemplateColumns: '1fr 1fr 1fr 1fr',
+  gridTemplateColumns: '1fr 1fr 1fr',
   gridTemplateRows: '1fr',
   gridColumnGap: '20px',
   gridRowGap: '20px',
   justifyItems: 'stretch',
   alignItems: 'center',
+
 
   '@media screen and (max-width: 768px)': {
     marginTop: '30px',
@@ -41,11 +43,18 @@ const StyledBox = {
   },
 };
 
-
+const SAppBar = styled(AppBar)({
+  '@media screen and (max-width:480px)': {
+    position: 'relative' // Corregido a "flexDirection"
+  },
+  '@media screen and (max-height:668px)': {
+    position: 'relative' // Corregido a "flexDirection"
+  },
+})
 const Header = () => {
 
   return (
-    <AppBar position="sticky">
+    <SAppBar position="sticky">
       <Toolbar sx={StyledBarra} disableGutters>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Avatar src='https://firebasestorage.googleapis.com/v0/b/react-firebase-9385b.appspot.com/o/panda.jpg?alt=media&token=29baad28-b5ea-4b20-8c3f-996db1ea3256' alt="panda" />
@@ -56,11 +65,10 @@ const Header = () => {
         <Box sx={StyledBox}>
           <Link to="/"><StyledButon >Sobre Mi</StyledButon></Link>
           <Link to="/proyectos"><StyledButon >Proyectos</StyledButon></Link>
-          <Link to="/CV"> <StyledButon >CV</StyledButon></Link>
           <Link to="/Contacto"><StyledButon >Contactos</StyledButon></Link>
         </Box>
       </Toolbar>
-    </AppBar>
+    </SAppBar>
   );
 }
 
