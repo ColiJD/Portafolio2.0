@@ -9,6 +9,11 @@ const MuiConta = {
   justifyContent: 'center',
   alignItems: 'center',
   height: '250px',
+
+
+  '@media screen and (max-width:768px)': {
+    textAlign: 'center'
+  }
 }
 
 const Footer = () => {

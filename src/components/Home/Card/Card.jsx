@@ -18,9 +18,12 @@ const CardStyled = {
   transition: 'all 0.2s ease-in', // There should be no space between "ease" and "-in"
 
   '&:hover': { // The :hover pseudo-class should be outside the backticks
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
+    boxShadow: '0 2px 4px rgba(255, 255, 255, 0.5)',
     transform: 'scale(1.1)',
   },
+  '@media screen and (max-width: 768px)': {
+    marginBottom: '1.2rem'
+  }
 };
 
 const MuiCard = ({ image, alt }) => {

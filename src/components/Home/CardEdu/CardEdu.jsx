@@ -21,6 +21,11 @@ const StyledCard = {
     borderRadius: '0.75rem',
   },
 
+  '@media screen and (max-width: 480px)': {
+    marginBottom: '1.2rem',
+    width: '100%',
+  }
+
   // '@media screen and (max-width: 768px)': {
   //     backgroundColor: 'red'
   // }

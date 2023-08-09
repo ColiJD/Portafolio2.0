@@ -15,7 +15,48 @@ const Proyectos = () => {
         repositorio='https://github.com/ColiJD/LunaCafe'
         demo='https://colijd.github.io/LunaCafe/'
       />
-      <CardProyec />
+      <CardProyec
+        imagen= 'https://colijd.github.io/imagenes/imagen/principal.webp'
+        titulo='ColiFlix'
+        descripcion='Proyecto de alura para subir y ver videos como una app de streaming'
+        repositorio='https://github.com/ColiJD/ColiFlix'
+        demo='https://coli-flix.vercel.app/'
+      />
+      <CardProyec
+        imagen= 'https://colijd.github.io/imagenes/imagen/usuarios.webp'
+        titulo='Organizacion'
+        descripcion='Proyecto para registrar las areas y empleados de una empresa'
+        repositorio='https://github.com/ColiJD/AluraGeekP'
+        demo='https://alura-geek-p.vercel.app/'
+      />
+      <CardProyec
+        imagen='https://colijd.github.io/imagenes/imagen/bank.webp'
+        titulo='Smart Bank'
+        descripcion='Proyecto para llevar la finanzas de forma ordenada'
+        repositorio='https://github.com/ColiJD/StyledComponents'
+        demo='https://styled-components-beryl.vercel.app/'
+      />
+      <CardProyec
+        imagen='https://colijd.github.io/imagenes/imagen/food.webp'
+        titulo='AluraFood'
+        descripcion='Simple recorrido de un Formulario'
+        repositorio='https://github.com/ColiJD/ReactHooks-Context'
+        demo='https://react-hooks-context-three.vercel.app/'
+      />
+      <CardProyec
+        imagen='https://colijd.github.io/Portafolio/assets/img/encriptar.png'
+        titulo='Encriptador'
+        descripcion='Challenge Oracle'
+        repositorio='https://github.com/ColiJD/Programa-Encriptacion-'
+        demo='https://colijd.github.io/Programa-Encriptacion-/'
+      />
+      <CardProyec
+        imagen='https://colijd.github.io/Portafolio/assets/img/forca2_print.png'
+        titulo='El ahorcado'
+        descripcion='Challenge Oracle'
+        repositorio='https://github.com/ColiJD?tab=repositories'
+        demo='https://github.com/ColiJD?tab=repositories'
+      />
     </Container>
   )
 }

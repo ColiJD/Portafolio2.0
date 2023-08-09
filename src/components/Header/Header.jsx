@@ -40,21 +40,21 @@ const StyledBox = {
     width: '100%',
     padding: '0 25px',
     gridTemplateColumns: '1fr',
+  
   },
 };
 
 const SAppBar = styled(AppBar)({
-  '@media screen and (max-width:480px)': {
-    position: 'relative' // Corregido a "flexDirection"
-  },
-  '@media screen and (max-height:668px)': {
-    position: 'relative' // Corregido a "flexDirection"
-  },
-})
+  position: 'sticky',
+
+  '@media screen and (max-width: 480px)': {
+    position: 'relative'
+  }
+});
 const Header = () => {
 
   return (
-    <SAppBar position="sticky">
+    <SAppBar >
       <Toolbar sx={StyledBarra} disableGutters>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Avatar src='https://firebasestorage.googleapis.com/v0/b/react-firebase-9385b.appspot.com/o/panda.jpg?alt=media&token=29baad28-b5ea-4b20-8c3f-996db1ea3256' alt="panda" />
