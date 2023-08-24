@@ -18,7 +18,7 @@ const MuiConta = {
 
 const Footer = () => {
   return (
-    <Container sx={MuiConta}>
+    <Container sx={MuiConta} component='footer'>
       <Typography variant="h4" color="in">Desarrollado por ColindresJD</Typography>
       <Box sx={{ paddingTop: '1.2rem' }}>
         <MuiButton component='a'
