@@ -14,7 +14,7 @@ const Img = styled('img')({
 
 
 const Envio = () => {
-  return (<Container sx={{display: 'grid', placeItems: 'center'}}>
+  return (<Container sx={{display: 'grid', placeItems: 'center'}} component='section'>
     <Paper sx={{backgroundColor: 'black',display: 'grid', placeItems: 'center', width: '50%',height: 250,marginTop: '2rem'  }} elevation={3}>
       <Img src={sol} alt='pando rojo'/>
       <Typography variant="h4" component='span' color="white">Formulario Enviado </Typography>

@@ -33,7 +33,7 @@ const Contactos = () => {
   const [errors, setErrors] = useState(ErrorState);
 
   return (
-    <StyledContainer>
+    <StyledContainer component="section"> 
       <Img src={pandaImg} alt="Panda Rojo al telefono" />
       <Form action="https://formsubmit.co/colindresj9@gmail.com" method="POST">
         <Typography variant="h3" component="h2" color="white">
