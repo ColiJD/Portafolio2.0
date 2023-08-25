@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import pandaImg from "../img/pandaAlTe.jpg";
-import { Typography} from "@mui/material";
+import { Typography } from "@mui/material";
 import { StyledContainer, Img, Form, Input } from "../Style/StyledContacto";
 import { validarCampo, validarCorreo } from "../components/Validaciones";
 import { StyledButon } from "../components/Componentes";
+import { Link } from "react-router-dom";
 
 const ErrorState = {
   nombre: {
@@ -32,28 +33,15 @@ const Contactos = () => {
   const [asunto, setAsunto] = useState("");
   const [errors, setErrors] = useState(ErrorState);
 
-  const HandleSubmit = (valores) => {
-    console.log("APPJS: ", valores);
-  };
   return (
     <StyledContainer>
       <Img src={pandaImg} alt="Panda Rojo al telefono" />
-      <Form
-        onSubmit={(e) => {
-          e.preventDefault();
-          HandleSubmit({
-            nombre,
-            apellido,
-            correo,
-            asunto,
-          });
-        }}
-      >
+      <Form action="https://formsubmit.co/colindresj9@gmail.com" method="POST">
         <Typography variant="h3" component="h2" color="white">
           Contacto
         </Typography>
         <Input
-          id="nombre"
+          name="nombre"
           variant="filled"
           label="Nombre"
           value={nombre}
@@ -65,7 +53,7 @@ const Contactos = () => {
           onBlur={(e) => validarCampo("nombre", e.target.value, setErrors)}
         />
         <Input
-          id="apellido"
+          name="apellido"
           variant="filled"
           label="Apellido"
           value={apellido}
@@ -77,6 +65,7 @@ const Contactos = () => {
           onBlur={(e) => validarCampo("apellido", e.target.value, setErrors)}
         />
         <Input
+          name="correo"
           variant="filled"
           label="Correo"
           value={correo}
@@ -88,6 +77,7 @@ const Contactos = () => {
           onBlur={(e) => validarCorreo("correo", e.target.value, setErrors)}
         />
         <Input
+          name="asunto"
           variant="filled"
           label="Asunto"
           value={asunto}
@@ -95,10 +85,13 @@ const Contactos = () => {
           type="text"
           onChange={(e) => setAsunto(e.target.value)}
         />
-        <StyledButon
-          type="submit"
-          sx={{width: '95%'}}
-          >Enviar</StyledButon>
+        <StyledButon type="submit" sx={{ width: "95%" }}>
+          Enviar
+        </StyledButon>
+        <Link to="Envio">
+          <input type="hidden" name="_next" />
+        </Link>
+        <input type="hidden" name="_captcha" value="false" />
       </Form>
     </StyledContainer>
   );

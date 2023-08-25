@@ -7,6 +7,8 @@ import Proyectos from "./Pages/Proyectos";
 import Contacto from './Pages/Contacto'
 import Container from "@mui/material/Container"
 import Footer from "./components/Footer/Footer";
+import Envio from "./Pages/Envio";
+import Page404 from "./Pages/page404";
 
 
 const App = () => {
@@ -20,6 +22,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/proyectos" element={<Proyectos />} />
             <Route path="/Contacto" element={<Contacto />} />
+            <Route path="/Envio" element={<Envio />} />
+            <Route path="*" element={<Page404 />} />
           </Routes>
           <Footer />
         </Router>
