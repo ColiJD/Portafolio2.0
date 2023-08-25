@@ -4,7 +4,6 @@ import { Typography } from "@mui/material";
 import { StyledContainer, Img, Form, Input } from "../Style/StyledContacto";
 import { validarCampo, validarCorreo } from "../components/Validaciones";
 import { StyledButon } from "../components/Componentes";
-import { Link } from "react-router-dom";
 
 const ErrorState = {
   nombre: {
@@ -88,9 +87,11 @@ const Contactos = () => {
         <StyledButon type="submit" sx={{ width: "95%" }}>
           Enviar
         </StyledButon>
-        <Link to="Envio">
-          <input type="hidden" name="_next" />
-        </Link>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://portafolio2-0-one.vercel.app/Envio"
+        />
         <input type="hidden" name="_captcha" value="false" />
       </Form>
     </StyledContainer>
