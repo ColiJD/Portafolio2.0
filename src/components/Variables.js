@@ -7,3 +7,4 @@ export const stark = "#E7DFDD";
 export const cenizaClaro = '#f2f2f2e8';
 export const font_family_Alegreyo = 'Alegreya';
 export const font_family_Roboto = 'Roboto';
+export const tarjeta = "#292555";

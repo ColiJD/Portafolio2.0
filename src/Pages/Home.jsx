@@ -16,6 +16,9 @@ import {
   SContainerSeccion,
   SBoxEdu,
 } from "../Style/StyledHome";
+import sql1 from "../img/sql.webp";
+import musica from "../img/audifonos-inalambricos.webp";
+import anime from "../img/anime.webp";
 
 const Home = () => {
   return (
@@ -103,7 +106,7 @@ const Home = () => {
             alt="React"
           />
           <MuiCard
-            image="https://colijd.github.io/Portafolio/assets/img/sql.png"
+            image={sql1}
             alt="MySql"
           />
           <MuiCard
@@ -116,7 +119,7 @@ const Home = () => {
         <STipografia variant="h2">Hobbies</STipografia>
         <SBox>
           <MuiCard
-            image="https://colijd.github.io/Portafolio/assets/img/tv_icon.png"
+            image={anime}
             alt="Anime"
           />
           <MuiCard
@@ -128,7 +131,7 @@ const Home = () => {
             alt="Guitarra"
           />
           <MuiCard
-            image="https://colijd.github.io/Portafolio/assets/img/headphones_icon.png"
+            image={musica}
             alt="Musica"
           />
           <MuiCard

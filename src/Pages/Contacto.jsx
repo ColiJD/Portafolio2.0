@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import pandaImg from "../img/pandaAlTe.jpg";
+import pandaImg from "../img/pandaAlTe.webp";
 import { Typography } from "@mui/material";
 import { StyledContainer, Img, Form, Input } from "../Style/StyledContacto";
 import { validarCampo, validarCorreo } from "../components/Validaciones";
@@ -38,6 +38,9 @@ const Contactos = () => {
       <Form action="https://formsubmit.co/colindresj9@gmail.com" method="POST">
         <Typography variant="h3" component="h2" color="white">
           Contacto
+        </Typography>
+        <Typography variant='subtitle2' component="legend" color="white">
+        Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
         </Typography>
         <Input
           name="nombre"
