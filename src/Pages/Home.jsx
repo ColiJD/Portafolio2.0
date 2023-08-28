@@ -60,7 +60,7 @@ const Home = () => {
             <MuiButton
               sx={StyledButton}
               variant="outlined"
-              href="https://colijd.github.io/imagenes/imagen/cv.pdf"
+              href="https://colijd.github.io/imagenes/imagen/CV%20de%20Jose%20Colindres.pdf"
             >
               Curriculum
             </MuiButton>
