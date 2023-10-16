@@ -7,7 +7,7 @@ import { CardActionArea } from '@mui/material';
 import { stark } from '../../Variables';
 
 const StyledCard = {
-  width: '30%',
+  width: '300px',
   height: '200px',
   backgroundColor: `${stark}`,
   display: 'flex',

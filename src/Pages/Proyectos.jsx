@@ -7,7 +7,7 @@ import CardProyec from "../components/Proyectos/CardProtec/CardProyec";
 const Proyectos = () => {
   return (
     <Container component='section' >
-      <Typography variant="h2" component='h2' color="white" sx={{ textAlign: 'center', margin: '1.5rem' }}>Experiencia Laboral</Typography>
+      <Typography variant="h3" component='h2' color="white" sx={{ textAlign: 'center', margin:'0.75rem 0' }}>Experiencia Laboral</Typography>
       <CardProyec
         imagen='https://colijd.github.io/Portafolio/assets/img/MENU.png'
         titulo='Tienda Online'

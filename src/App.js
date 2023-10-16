@@ -15,7 +15,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Container component='main'>
+      <Container component='main' sx={{padding:0}}>
         <Router>
           <Header />
           <Routes>

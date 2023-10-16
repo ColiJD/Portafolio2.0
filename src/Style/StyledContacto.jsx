@@ -3,58 +3,50 @@ import TextField from "@mui/material/TextField";
 import { Container } from "@mui/material";
 
 const StyledContainer = styled(Container)({
-  display: "flex",
-  boxSizing: "border-box",
-  justifyContent: "space-between",
-  marginTop: "3rem",
-  minHeight: "30vh" /* Mínimo del 30% del alto de la pantalla */,
-  height: "75vh",
-  overflow: "auto",
+	boxSizing: "border-box",
+	marginTop: "1.5rem",
+	textAlign: "center",
 
-   "@media screen and (max-width:768px)": {
-    height: "60vh",
-  },
-  "@media screen and (max-width:480px)": {
-    margin: 0
-  },
+	"@media screen and (min-width:768px)": {
+		display: "flex",
+	},
 });
 
 const Img = styled("img")({
-  width: "40%",
-  objectFit: "cover",
-  borderRadius: "2rem",
+	display: "none",
 
-  "@media screen and (max-width:768px)": {
-    width: "30%",
-  },
-    "@media screen and (max-width:480px)": {
-    display: 'none',
-  },
+	"@media screen and (min-width:768px)": {
+		display: "block",
+		width: "40%",
+		objectFit: "cover",
+		borderRadius: "2rem",
+	},
 });
 
 const Form = styled("form")({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-around",
-  alignItems: "center",
-  width: "55%",
-  margin: "0 1.2rem 0.2rem",
-  boxSizing: "border-box",
-  boxShadow: "0 0 4px rgba(255, 255, 255, 0.5)",
+	width: "100%",
+	margin: "0",
+	boxShadow: "none",
 
-  "@media screen and (max-width:768px)": {
-    width: "65%",
-  },
-  "@media screen and (max-width:480px)": {
-    width: "100%",
-    margin: "0",
-    boxShadow: "none",
-  },
+	"@media screen and (min-width:768px)": {
+		width: "55%",
+		margin: "0 1.2rem 0.2rem",
+		boxSizing: "border-box",
+		boxShadow: "0 0 4px rgba(255, 255, 255, 0.5)",
+	},
 });
-
+const ContenedorInput = styled("div")({
+	marginTop: "0.75rem",
+	paddingBottom: "0.75rem",
+	"@media screen and (min-width:768px)": {
+		paddingLeft: "0.75rem",
+		paddingRight: "0.75rem",
+	},
+});
 const Input = styled(TextField)({
-  backgroundColor: "#fff",
-  width: "95%",
+	backgroundColor: "#fff",
+	width: "100%",
+	marginBottom: "0.75rem",
 });
 
-export { StyledContainer, Img, Form, Input };
+export { StyledContainer, Img, Form, ContenedorInput, Input };
