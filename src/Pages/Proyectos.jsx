@@ -1,7 +1,11 @@
 import React from "react";
-import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography'
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 import CardProyec from "../components/Proyectos/CardProtec/CardProyec";
+import pkerenabi from "../img/KerenabiFolio.webp";
+import MultiMediaDown from "../img/multimediadow.webp";
+import MediaDownloader from "../img/mediadownloadercd.webp";
+import DrogeriaV3 from "../img/drogeria.webp";
 
 
 const Proyectos = () => {
@@ -42,6 +46,7 @@ const Proyectos = () => {
         descripcion='Simple recorrido de un Formulario'
         repositorio='https://github.com/ColiJD/ReactHooks-Context'
         demo='https://react-hooks-context-three.vercel.app/'
+        
       />
       <CardProyec
         imagen='https://colijd.github.io/Portafolio/assets/img/encriptar.png'
@@ -55,7 +60,36 @@ const Proyectos = () => {
         titulo='El ahorcado'
         descripcion='Challenge Oracle'
         repositorio='https://github.com/ColiJD?tab=repositories'
-        demo='https://github.com/ColiJD?tab=repositories'
+        demo=''
+      />
+      {/*  */}
+      <CardProyec
+        imagen={MultiMediaDown}
+        titulo='MultiMediaDown'
+        descripcion='Este programa permite extraer audio de youtube usando excel'
+        repositorio='https://github.com/ColiJD/MultiMediaDown'
+        demo=''
+      />
+      <CardProyec
+        imagen={MediaDownloader}
+        titulo='MediaDownloader'
+        descripcion='Este programa permite extraer contenido multimedia en diferentes formatos de youtube'
+        repositorio='https://github.com/ColiJD/MediaDownloader'
+        demo=''
+      />
+      <CardProyec
+        imagen={pkerenabi}
+        titulo='KerenabiFolio'
+        descripcion='Portafolio academico para maestra de escula'
+        repositorio='https://github.com/ColiJD/KerenabiFolio'
+        demo='https://colijd.github.io/KerenabiFolio/'
+      />
+      <CardProyec
+        imagen={DrogeriaV3}
+        titulo='DrogeriaV3'
+        descripcion='CRUD para la venta de medicinas'
+        repositorio='https://github.com/ColiJD/DrogeriaV3'
+        demo=''
       />
     </Container>
   )

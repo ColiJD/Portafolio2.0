@@ -22,7 +22,7 @@ const EstiloBoton = styled(Button)({
   marginRight: "0.75rem",
 });
 
-const MuiButton = ({ children, href, endIcon, component, sx, variant, onClick}) => {
+const MuiButton = ({ children, href, endIcon, component, sx, variant, onClick, disabled}) => {
   return (
     <EstiloBoton
       sx={sx}
@@ -33,6 +33,8 @@ const MuiButton = ({ children, href, endIcon, component, sx, variant, onClick}) 
       endIcon={endIcon}
       rel="noopener noreferrer"
       onClick={onClick}
+      disabled = {disabled}
+
     >
       {children}
     </EstiloBoton>

@@ -86,7 +86,9 @@ const BotonDemo = {
 }
 
 
-const CardProyec = ({ imagen, titulo, descripcion, repositorio, demo }) => {
+const CardProyec = ({ imagen, titulo, descripcion, repositorio, demo, disabled }) => {
+  const isDisabledRepo = !repositorio; // Si repositorio está vacío, el botón estará deshabilitado
+  const isDisabledDemo = !demo; // Si demo está vacío, el botón estará deshabilitado
   return (
     <StyledPaper>
       <Img src={imagen} alt={descripcion} />
@@ -94,8 +96,8 @@ const CardProyec = ({ imagen, titulo, descripcion, repositorio, demo }) => {
         <StyledTitulo variant='h3' color="ActiveBorder" >{titulo}</StyledTitulo>
         <Typography variant='span' component='span' color="ActiveBorder" sx={{fontSize: '20px'}}>{descripcion}</Typography>
         <Box sx={{ marginTop: '1.2rem' }}>
-          <MuiButton component='a' variant="outlined" href={repositorio} sx={BotonRepo}>Repositorio</MuiButton>
-          <MuiButton component='a' variant="Contained" href={demo} sx={BotonDemo}>Ver demo</MuiButton>
+          <MuiButton component='a' variant="outlined" href={repositorio} disabled={isDisabledRepo} sx={BotonRepo}>Repositorio</MuiButton>
+          <MuiButton component='a' variant="Contained" href={demo} disabled={isDisabledDemo} sx={BotonDemo}>Ver demo</MuiButton>
         </Box>
       </StyledInfo>
     </StyledPaper>
