@@ -28,13 +28,10 @@ const Home = () => {
 				<StyledImg src="https://colijd.github.io/Portafolio/assets/img/perfil.jpg" />
 				<StyledBox>
 					<StyledParrafo variant="h4" component="p">
-						Hola, mi nombre es Jose Daniel Colindres y construyo paginas web
+					Hola, soy José Daniel Colindres, un apasionado creador de páginas web que transforma ideas en experiencias digitales memorables.
 					</StyledParrafo>
 					<Typography variant="body1">
-						Soy formado en la univercidad catolica de Honduras en la carrera
-						de ciencias de la computacion especializado en Front-end gracias
-						al equipo de alura,estuve participando del proyecto Oracle ONE en
-						Alura Latam.
+						Con una sólida formación en Ciencias de la Computación en la Universidad Católica de Honduras, me especialicé en el desarrollo Front-end gracias al programa Oracle ONE en Alura Latam, donde convertí mi pasión por la tecnología en un motor de innovación.
 					</Typography>
 					<StyledToobar>
 						<MuiButton
@@ -68,22 +65,49 @@ const Home = () => {
 				<StyledBox>
 					<STipografia variant="h2">Sobre Mi</STipografia>
 					<Typography variant="body1" sx={{ textAlign: "justify" }}>
-						Soy un joven de 22 años de tes blanca me gusta la tecnología, la
-						creacion de aplicaciones de escritorio, de dispositivos mobiles,
-						el desarrollo de paginas web, soy atento, autodidacta,
-						responsable, estudie la carrera de ciencias de la computacion por
-						que me gusta el hecho de crear, de innovar nuevas sistemas que
-						ayuden a las personas a desarrollar sus actividades con mayor
-						facilidad, soy entuciasta,
+					Soy un joven entusiasta que vive para crear, aprender y marcar la diferencia. La tecnología es mi medio para diseñar soluciones que faciliten la vida de las personas, ya sea a través de aplicaciones web, móviles o de escritorio.
+					Me considero autodidacta, responsable y curioso, siempre buscando cómo llevar las ideas un paso más allá. Durante mi formación, tuve el privilegio de realizar mi práctica profesional en la Compañía Azucarera Tres Valles, dentro del Departamento de Tecnología de la Información, donde adquirí experiencia práctica en la implementación de soluciones tecnológicas.
 					</Typography>
 					<Typography variant="body1" sx={{ marginTop: "1.75rem" }}>
-						Citando a una gran persona que dijo "Si puedes imaginarlo puedes
-						programarlo" Estoy capacitado por cursos en udemy de base de
-						datos, y en alura de html, css, javascript, git y react y poseo
-						conocimiento en el area de redes por la capacitacion de cisco.
+					He desarrollado habilidades en bases de datos (cursos en Udemy), desarrollo web con HTML, CSS, JavaScript, Git y React (Alura) y poseo conocimientos en redes informáticas gracias a la capacitación de Cisco.
+					Mi misión es clara: crear, innovar y contribuir al futuro tecnológico con creatividad y determinación.
 					</Typography>
 				</StyledBox>
 			</Container>
+			<SContainerSeccion component="section">
+				<STipografia variant="h2">Educacion</STipografia>
+				<SBoxEdu>
+					<CardEducacion
+						image="https://colijd.github.io/Portafolio/assets/img/unicah.png"
+						alt="Logo de la universidad catolica"
+						subtitulo="Ing Ciencias de la Computacion"
+						anio="2020-2024"
+					/>
+					<CardEducacion
+						image="https://colijd.github.io/Portafolio/assets/img/alura_logo.png"
+						alt="Logo de alura"
+						subtitulo="Diseño Web"
+						anio="Alura-2023"
+					/>
+					<CardEducacion
+						image="https://colijd.github.io/Portafolio/assets/img/udemy.png"
+						alt="Logo de udemy"
+						subtitulo="Base de Datos"
+						anio="Curso 2022"
+					/>
+				</SBoxEdu>
+			</SContainerSeccion>
+			<SContainerSeccion component="section">
+				<STipografia variant="h2">Experiencia</STipografia>
+				<SBoxEdu>
+					<CardEducacion
+						image="https://productoresdeazucarhonduras.com/wp-content/uploads/elementor/thumbs/2-1-ptr6xjo4tghogauxsqkxxwrk395sc23efl66d3570w.png"
+						alt="Logo compañia tres valles"
+						subtitulo="Compañía Azucarera Tres Valles "
+						anio="2024-10-1"
+					/>
+				</SBoxEdu>
+			</SContainerSeccion>
 			<SContainerSeccion component="section">
 				<STipografia variant="h2">Habilidades</STipografia>
 				<SBox>
@@ -133,29 +157,6 @@ const Home = () => {
 						alt="Ir de Ruta"
 					/>
 				</SBox>
-			</SContainerSeccion>
-			<SContainerSeccion component="section">
-				<STipografia variant="h2">Educacion</STipografia>
-				<SBoxEdu>
-					<CardEducacion
-						image="https://colijd.github.io/Portafolio/assets/img/unicah.png"
-						alt="Logo de la universidad catolica"
-						subtitulo="Ing Ciencias de la Computacion"
-						anio="2020-2024"
-					/>
-					<CardEducacion
-						image="https://colijd.github.io/Portafolio/assets/img/alura_logo.png"
-						alt="Logo de alura"
-						subtitulo="Diseño Web"
-						anio="Alura-2023"
-					/>
-					<CardEducacion
-						image="https://colijd.github.io/Portafolio/assets/img/udemy.png"
-						alt="Logo de udemy"
-						subtitulo="Base de Datos"
-						anio="Curso 2022"
-					/>
-				</SBoxEdu>
 			</SContainerSeccion>
 		</>
 	);

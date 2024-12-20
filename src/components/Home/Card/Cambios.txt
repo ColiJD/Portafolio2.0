@@ -1,0 +1,36 @@
+      {/* <CardProyec
+        imagen= 'https://colijd.github.io/imagenes/imagen/principal.webp'
+        titulo='ColiFlix'
+        descripcion='Proyecto de alura para subir y ver videos como una app de streaming'
+        repositorio='https://github.com/ColiJD/ColiFlix'
+        demo='https://coli-flix.vercel.app/'
+      />
+      <CardProyec
+        imagen= 'https://colijd.github.io/imagenes/imagen/usuarios.webp'
+        titulo='Organizacion'
+        descripcion='Proyecto para registrar las areas y empleados de una empresa'
+        repositorio='https://github.com/ColiJD/AluraGeekP'
+        demo='https://alura-geek-p.vercel.app/'
+      />
+      <CardProyec
+        imagen='https://colijd.github.io/imagenes/imagen/bank.webp'
+        titulo='Smart Bank'
+        descripcion='Proyecto para llevar la finanzas de forma ordenada'
+        repositorio='https://github.com/ColiJD/StyledComponents'
+        demo='https://styled-components-beryl.vercel.app/'
+      />
+      <CardProyec
+        imagen='https://colijd.github.io/imagenes/imagen/food.webp'
+        titulo='AluraFood'
+        descripcion='Simple recorrido de un Formulario'
+        repositorio='https://github.com/ColiJD/ReactHooks-Context'
+        demo='https://react-hooks-context-three.vercel.app/'
+        
+      /> */}
+            {/* <CardProyec
+        imagen={MediaDownloader}
+        titulo='MediaDownloader'
+        descripcion='Este programa permite extraer contenido multimedia en diferentes formatos de youtube'
+        repositorio='https://github.com/ColiJD/MediaDownloader'
+        demo=''
+      /> */}
