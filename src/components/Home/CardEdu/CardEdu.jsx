@@ -8,13 +8,9 @@ import { stark } from '../../Variables';
 
 const StyledCard = {
   width: '300px',
-  height: '200px',
+  height: 'auto',
   backgroundColor: `${stark}`,
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  transition: 'all 1.5s',
+  transition: 'transform 1.5s, border-radius 1.5s', // Optimizar transiciones
 
   '&:hover': {
     transform: 'scale(1.1)',
@@ -24,31 +20,35 @@ const StyledCard = {
   '@media screen and (max-width: 480px)': {
     marginBottom: '1.2rem',
     width: '100%',
-  }
-
-  // '@media screen and (max-width: 768px)': {
-  //     backgroundColor: 'red'
-  // }
-}
+    height: 'auto',
+  },
+};
 
 const CardEducacion = ({ image, alt, subtitulo, anio }) => {
-
-    return (
-      <Card sx={StyledCard}>
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            image={image}
-            alt={alt}
-            sx={{ height: 100 }}
-          />
-          <CardContent>
-            <Typography variant="h5" color="text.secondary">{subtitulo}</Typography>
-            <Typography variant="body2" color="text.secondary"> {anio}</Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-    );
-  }
+  return (
+    <Card sx={StyledCard}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          image={image}
+          alt={alt}
+          sx={{
+            height: 150, // Ajuste de altura para que se vea bien
+            objectFit: 'cover', // Mantiene la imagen proporcional
+            width: '100%', // Asegura que la imagen ocupe todo el ancho disponible
+          }}
+        />
+        <CardContent sx={{ overflow: 'hidden', paddingBottom: '1rem' }}>
+          <Typography variant="h6" color="text.secondary" noWrap>
+            {subtitulo}
+          </Typography>
+          <Typography variant="body2" color="text.secondary" noWrap>
+            {anio}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  );
+};
 
 export default CardEducacion;

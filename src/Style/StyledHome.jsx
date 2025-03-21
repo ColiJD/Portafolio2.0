@@ -88,19 +88,19 @@ const SBoxEdu = styled(Box)({
 	display: "grid",
 	justifyItems: "center",
 	alignItems: "center",
-	gridTemplateColumns: "auto",
+	gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", // Se adapta automáticamente al tamaño de la pantalla
+	gridGap: "35px", // Define el espacio entre los elementos
 	"@media screen and (min-width: 400px)": {
-		gridTemplateColumns: "auto",
-    gridRowGap: "35px",
+	  gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
 	},
 	"@media screen and (min-width: 768px)": {
-		gridTemplateColumns: "auto auto",
-		gridRowGap: "35px",
+	  gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
 	},
 	"@media screen and (min-width: 1024px)": {
-		gridTemplateColumns: "auto auto auto ",
+	  gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
 	},
-});
+  });
+  
 
 export {
 	SContainer,

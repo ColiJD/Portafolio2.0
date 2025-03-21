@@ -35,10 +35,10 @@ const MuiCard = ({ image, alt }) => {
           component="img"
           image={image}
           alt={alt}
-          sx={{ width: '2.5rem', paddingLeft: '0.75rem' }}
+          sx={{ width: '50%', paddingLeft: '0.75rem' }}
         />
         <CardContent>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="button" color="text.secondary">
             {alt}
           </Typography>
         </CardContent>
