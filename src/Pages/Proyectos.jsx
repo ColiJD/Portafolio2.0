@@ -10,6 +10,7 @@ import Carwash from "../img/carwash.webp";
 import Reporte from "../img/Reporte.webp";
 import Riego from "../img/riego.webp";
 import Tickets from "../img/tickes.png";
+import hospital from "../img/hospital.png";
 
 
 const Proyectos = () => {
@@ -78,6 +79,13 @@ const Proyectos = () => {
         imagen={Riego}
         titulo='Reportes de Riego'
         descripcion='Reportes que muestran la humedad del suelo '
+        repositorio=''
+        demo=''
+      />
+      <CardProyec
+        imagen={hospital}
+        titulo='Reportes de Hospital'
+        descripcion='Reportes que muestran la ocupación y recursos del hospital'
         repositorio=''
         demo=''
       />
